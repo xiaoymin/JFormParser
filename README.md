@@ -4,7 +4,12 @@
 
 The JFormParser plugin: creating a web page based on the JSON structure, and achieve liberation back-end developers to reduce back-end requirements for front-end development, is focused on developing interface background service program, the form elements, later will add more page elements support
 	
-	
+
+# Online document 
+
+[https://xiaoymin.github.io/JFormParser-doc/](https://xiaoymin.github.io/JFormParser-doc/) 
+
+
 # JFormParser Component dependency
 
 At present mainly rely on bootstrap CSS framework, jQuery top two core components, the beginning of the design idea is to reduce the dependence on the plug-in coupling, the page elements used to construct the other plug-ins can achieve diversification can be replaced, which makes the page effect more abundant
