@@ -1,15 +1,15 @@
-#JFormParser
+# JFormParser
 
 
 
 The JFormParser plugin: creating a web page based on the JSON structure, and achieve liberation back-end developers to reduce back-end requirements for front-end development, is focused on developing interface background service program, the form elements, later will add more page elements support
 	
 	
-#JFormParser Component dependency
+# JFormParser Component dependency
 
 At present mainly rely on bootstrap CSS framework, jQuery top two core components, the beginning of the design idea is to reduce the dependence on the plug-in coupling, the page elements used to construct the other plug-ins can achieve diversification can be replaced, which makes the page effect more abundant
 
-##Each components:
+## Each components:
 
  - <strong>*bootstrap*</strong> : *v3.3.5*
  - <strong>*jQuery*</strong> : *1.9.1*
@@ -18,7 +18,7 @@ At present mainly rely on bootstrap CSS framework, jQuery top two core component
  - <strong>*jQWidgets*</strong> : *v3.9.1*
 
 
-#JFormParser element
+# JFormParser element
 	
 Depending on the number of elements to build a colorful page, the current support for the plug-in is as follows:
 	
@@ -44,7 +44,7 @@ Panel (panel): panel component is a container component
 
 
 
-#JFormParser page template
+# JFormParser page template
 
 At present, the template is mainly two, one is the list page template, a FORM form page template
 
@@ -136,7 +136,8 @@ JSON structure example:
     
 ## The results are as follows
   ![Document list template effect diagram][1]  
-##FORM form template
+  
+## FORM form template
 
 JSON structure example:
 
@@ -225,7 +226,8 @@ JSON structure example:
       ]
     }
     
-##FORM template effects are as follows:
+## FORM template effects are as follows:
+
 ![FORM template effects are as follows][2]
 
 
