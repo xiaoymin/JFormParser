@@ -1,0 +1,56 @@
+<!DOCTYPE HTML html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>数据编辑</title>
+    <script type="text/javascript" src="../lib/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/bootstrap.css" /> 
+    <script src="../lib/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> 
+    
+    <!--My97DatePicker日期控件 -->
+    <link rel="stylesheet" type="text/css" href="../lib/My97DatePicker/skin/WdatePicker.css" />
+    <script type="text/javascript" src="../lib/My97DatePicker/WdatePicker.js"></script>
+    <!--jqwidgets -->
+    <link rel="stylesheet" type="text/css" href="../lib/jqwidgets/styles/jqx.base.css" />
+    <script type="text/javascript" src="../lib/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../lib/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../lib/jqwidgets/jqxfileupload.js"></script>
+    <!-- 图片集-->
+<script src="../JFormParser_core_source.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript" src="../lib/plugins/cloud_images.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/plugins/cloud_image.css" />
+	<!-- layer-->
+    <link rel="stylesheet" type="text/css" href="../lib/layer/skin/layer.css" />
+    <script type="text/javascript" src="../lib/layer/layer.js"></script>
+<!--layerpage -->
+    <link rel="stylesheet" type="text/css" href="../lib/layer/laypage/skin/laypage.css" />
+    <script type="text/javascript" src="../lib/layer/laypage/laypage.js"></script>
+ 
+</head>
+<body  style="overflow: scroll;">
+
+<script type="text/javascript">
+     
+    var urlp={};
+     
+    $(function () {
+        function main() {
+            $.ajax({
+                url:'../json/form.json',
+                async:false,
+                cache:false,
+                dataType:"text",
+                success:function (data) {
+                    var d=JSON.parse(data);
+                    var options=$.extend({},d,{id:"",params:{current_page:1},urlParams:urlp});
+                    var jfp=new JFormParser(options);
+                    jfp.init();
+                }
+            })
+        }
+        main();
+    })
+</script>
+</body>
+</html>

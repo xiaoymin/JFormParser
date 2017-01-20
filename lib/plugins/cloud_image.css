@@ -1,0 +1,39 @@
+
+.cloud-img-main{
+    width: 990px;border: 1px solid #dedede;padding: 20px 0px 20px 20px;
+}
+
+.cloud-img-body{
+    width: 310px;height: 310px;border: 1px solid #dedede;float: left;margin-right: 5px;margin-top: 5px;
+}
+
+.cloud-img-body textarea{
+    resize: none;
+    height: 48px;
+    line-height: 48px;
+    width: 308px;
+    border: none;
+    text-align: center;
+}
+
+.cloud-img-preview{
+    height: 260px;width: 309px;position: relative;
+}
+
+.cloud-img-header{
+    width: 309px;height: 45px;line-height: 45px;background-color: #000000;float: left;opacity: 0.4;display: none;position: absolute;top:0
+}
+
+.cloud-img-header li{
+    float: right;
+    margin-right: 14px;
+}
+.cloud-img-header li a{
+    text-decoration: none;
+}
+.cloud-img-header li a:hover{
+    cursor: pointer;
+}
+.cloud-img-header li img{
+    vertical-align:middle;
+}
